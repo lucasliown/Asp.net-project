@@ -1,0 +1,36 @@
+﻿@using MvcBankAdmin.Models
+@using Microsoft.AspNetCore.Http
+@model List<AccountViewModelDto>
+@{
+    ViewData["Title"] = "Accounts";
+}
+
+<div>
+    <h1 class="display-4">Welcome, @Model[0].CustomerID</h1>
+    <h3>Your Accounts</h3>
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(x => Model[0].AccountNumber)</th>
+            <th>@Html.DisplayNameFor(x =>Model[0].AccountType)</th>
+            <th>@Html.DisplayNameFor(x => Model[0].Balance)</th>
+            <th></th>
+        </tr>
+        @foreach (var account in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => account.AccountNumber)</td>             
+                 <td>@Html.DisplayFor(x => account.AccountType) </td>
+                <td>$@Html.DisplayFor(x => account.Balance)</td>
+                <td>
+                    <a class="btn btn-primary"
+                        asp-controller ="Transactions"  asp-action="Index" asp-route-id="@account.AccountNumber">View Transaction</a>
+                         <a class="btn btn-primary"
+                          asp-controller="BillPays"  asp-action="Index" asp-route-id="@account.AccountNumber">View BillPay</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<div>
+    <a asp-action="Index">Go Back</a>
+</div>

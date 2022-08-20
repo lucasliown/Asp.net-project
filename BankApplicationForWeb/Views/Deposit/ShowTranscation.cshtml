@@ -1,0 +1,38 @@
+﻿@using BankApplicationForWeb.Models.ViewModel
+@using Microsoft.AspNetCore.Http
+@model TransactionViewModel
+@{
+    ViewData["Title"] = "Show Transaction for Deposit";
+
+}
+<div>
+
+    <h1 class="display-4">Account Number:@Model.AccountNumber</h1>
+
+    <h3>Your Transaction is generated:</h3>
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(x => Model.TransactionID)</th>
+            <th>@Html.DisplayNameFor(x =>Model.TransactionType)</th>
+            <th>@Html.DisplayNameFor(x => Model.AccountNumber)</th>
+            <th>@Html.DisplayNameFor(x => Model.DestinationAccountNumber)</th>
+            <th>@Html.DisplayNameFor(x => Model.Amount)</th>
+            <th>@Html.DisplayNameFor(x => Model.Comment)</th>
+            <th>@Html.DisplayNameFor(x => Model.TransactionTimeUtc)</th>
+        </tr>
+
+        <tr>
+            <td>@Html.DisplayFor(x => Model.TransactionID)</td>
+            <td>@Html.DisplayFor(x => Model.TransactionType) </td>
+            <td>@Html.DisplayFor(x => Model.AccountNumber)</td>
+            <td>@Html.DisplayFor(x => Model.DestinationAccountNumber)</td>
+            <td>$@Html.DisplayFor(x => Model.Amount)</td>
+            <td>@Html.DisplayFor(x => Model.Comment)</td>
+            <td>@Html.DisplayFor(x => Model.TransactionTimeUtc)</td>
+        </tr>
+
+    </table>
+    <div>
+        <a asp-action="Index">Back to Accounts</a>
+    </div>
+</div>

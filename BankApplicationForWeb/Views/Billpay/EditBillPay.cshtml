@@ -1,0 +1,70 @@
+﻿@using BankApplicationForWeb.Models
+@using BankApplicationForWeb.Models.ViewModel
+@model ViewPayeeInCheckBox
+
+@{
+    ViewData["Title"] = "Edit BillPay";
+}
+
+
+<style>
+    .move{
+        margin-bottom:30px;
+
+
+    }
+    .moveleft{
+        margin-left:17px;
+    }
+    .moveLess{
+        margin-bottom:17px
+
+    }
+
+</style>
+<h1>Modeify BillPay</h1>
+
+<hr />
+<div class="form-group">
+    <div class="col-md-4">
+        <form  asp-action="EditBillPay">
+             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+               <input type="hidden" name="BillPayId" value="@ViewBag.BillPayId" />
+             <input type="hidden" name="AccountNumber" value="@ViewBag.AccountNumber" />
+            <div class="form-group moveLess">
+             <label  class="control-label">Payee:</label>
+               <select asp-for="ServiceName" asp-items="Model.payeesNameList" class="form-group">
+                   <option value="">please seclect one option</option>
+               </select>
+            </div>
+             @Html.ValidationMessage("ServiceName", new { @class = "text-danger" })
+            <div class="form-group move">
+                <label asp-for="billPay.Amount" class="control-label" ></label>
+                <input asp-for="billPay.Amount" class="form-control" value="@ViewBag.Amount?.ToString("0.00")" />
+                <span asp-validation-for="billPay.Amount" class="text-danger"></span>
+            </div>
+          
+            <div class="form-group move">
+                <label asp-for="billPay.ScheduleTimeUtc" class="control-label"></label>
+                <input asp-for="billPay.ScheduleTimeUtc" class="form-control" />
+                <span asp-validation-for="billPay.ScheduleTimeUtc" class="text-danger"></span>
+            </div>
+           
+             <div class="form-group move">
+                <label asp-for="billPay.Period" class="control-label"></label>
+                <input asp-for="billPay.Period" class="form-control" />
+                <h3 class="badge badge-secondary">Note:Please enter M or O: M is represant Monthly and O is represant One Off</h3>
+                <span asp-validation-for="billPay.Period" class="text-danger"></span>
+            </div>
+        
+            <div class="form-group move">
+                <input type="submit" value="Confirm" class="btn btn-outline-info" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

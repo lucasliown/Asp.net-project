@@ -1,0 +1,120 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BankApplicationForWeb
+build_property.RootNamespace = BankApplicationForWeb
+build_property.ProjectDir = F:\WebDevelopmentTechnology\Assignment2\s3845728-s3810082-a2\BankApplicationForWeb\BankApplicationForWeb\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\WebDevelopmentTechnology\Assignment2\s3845728-s3810082-a2\BankApplicationForWeb\BankApplicationForWeb
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Billpay/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHBheVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Billpay/EditBillPay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHBheVxFZGl0QmlsbFBheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Billpay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHBheVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Billpay/ShowBillPay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHBheVxTaG93QmlsbFBheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Deposit/Deposit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwb3NpdFxEZXBvc2l0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Deposit/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwb3NpdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Deposit/ShowTranscation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwb3NpdFxTaG93VHJhbnNjYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Home/ShowAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93QWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Login/BlockedLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQmxvY2tlZExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/MyProfile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlQcm9maWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Mystatement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlzdGF0ZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Mystatement/ViewMyStatement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlzdGF0ZW1lbnRcVmlld015U3RhdGVtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Transfer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNmZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Transfer/ShowTranscation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNmZXJcU2hvd1RyYW5zY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Transfer/Transfer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNmZXJcVHJhbnNmZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Withdraw/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Withdraw/ShowTranscation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdcU2hvd1RyYW5zY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Withdraw/Withdraw.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdcV2l0aGRyYXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/BankApplicationForWeb/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-liohbqfcpn

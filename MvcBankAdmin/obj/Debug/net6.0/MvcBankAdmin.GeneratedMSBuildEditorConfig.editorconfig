@@ -1,0 +1,68 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MvcBankAdmin
+build_property.RootNamespace = MvcBankAdmin
+build_property.ProjectDir = F:\WebDevelopmentTechnology\Assignment2\s3845728-s3810082-a2\BankApplicationForWeb\MvcBankAdmin\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\WebDevelopmentTechnology\Assignment2\s3845728-s3810082-a2\BankApplicationForWeb\MvcBankAdmin
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/BillPays/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbFBheXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/Customers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/Customers/ViewAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXFZpZXdBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/Transactions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/WebDevelopmentTechnology/Assignment2/s3845728-s3810082-a2/BankApplicationForWeb/MvcBankAdmin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-a04c4zhx62

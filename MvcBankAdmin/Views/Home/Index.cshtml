@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Http
+@model CustomerDto
+@{
+    ViewData["Title"] = "Home";
+}
+<style>
+    .theCenter {
+        text-align: center;
+    }
+
+</style>
+
+@{
+    var isLoggedIn = Context.Session.GetString("Admin");
+}
+@if (isLoggedIn != null) { }
+else{
+    <div>
+        <h1 class="display-4 theCenter">Welcome Admin page for Most Common Bank of Australia</h1>
+
+        <div class="text-center">
+            <img src="~/img/bank.jpg" alt="bank" />
+        </div>
+    </div>
+}
+
+

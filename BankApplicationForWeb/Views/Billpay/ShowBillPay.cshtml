@@ -1,0 +1,153 @@
+﻿@using BankApplicationForWeb.Models.ViewModel
+@using Microsoft.AspNetCore.Http
+@model List<BillPayViewModel>
+@{
+    ViewData["Title"] = "BillPay show";
+
+}
+
+
+<style>
+
+    .changeBigBox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .moveSome {
+        margin-right: 25px;
+    }
+
+</style>
+
+
+
+@if (Model.Any())
+{
+    <div>
+        <div>
+
+            <h1 class="display-4">Account Number:@ViewBag.AccountNumber</h1>
+        </div>
+        <div class="changeBigBox">
+            <div>
+                <h3>Your BillPay is here:</h3>
+            </div>
+            <form asp-Controller="BillPay" asp-action="Create">
+                <input type="hidden" name="AccountNumber" value="@Model[0].AccountNumber" />
+                <input type="submit" class="btn btn-outline-success" moveSome" value="+new BillPay" />
+            </form>
+
+        </div>
+
+        <table class="table">
+            <tr>
+                <th>@Html.DisplayNameFor(x => Model[0].BillPayId)</th>
+                <th>@Html.DisplayNameFor(x =>Model[0].AccountNumber)</th>
+                <th>@Html.DisplayNameFor(x => Model[0].PayeeId)</th>
+                <th>@Html.DisplayNameFor(x => Model[0].Amount)</th>
+                <th>@Html.DisplayNameFor(x => Model[0].ScheduleTimeUtc)</th>
+                <th>@Html.DisplayNameFor(x => Model[0].Period)</th>
+                <th>@Html.DisplayNameFor(x => Model[0].Status)</th>
+                <th></th>
+                <th></th>
+            </tr>
+            @foreach (var billpay in Model)
+            {
+                @if (billpay.LockState == "L")
+                {
+                    <tr class="bg-secondary">
+                        <td>@Html.DisplayFor(x => billpay.BillPayId)</td>
+                        <td>@Html.DisplayFor(x => billpay.AccountNumber) </td>
+                        <td>@Html.DisplayFor(x =>  billpay.PayeeId)</td>
+                        <td>$@Html.DisplayFor(x =>  billpay.Amount)</td>
+                        <td>@Html.DisplayFor(x =>  billpay.ScheduleTimeUtc)</td>
+                        <td>@Html.DisplayFor(x =>  billpay.Period)</td>
+                        <td><div class="btn btn-dark">Blocked</div></td>
+                        <td>
+                            <form asp-action="Cancel">
+                                <input type="hidden" name="AccountNumber" value="@ViewBag.AccountNumber" />
+                                <input type="hidden" name="BillPayId" value="@billpay.BillPayId" />
+                                <input type="submit" class="btn btn-light" value="Cancel" />
+                            </form>
+                        </td>
+                        <td></td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(x => billpay.BillPayId)</td>
+                        <td>@Html.DisplayFor(x => billpay.AccountNumber) </td>
+                        <td>@Html.DisplayFor(x =>  billpay.PayeeId)</td>
+                        <td>$@Html.DisplayFor(x =>  billpay.Amount)</td>
+                        <td>@Html.DisplayFor(x =>  billpay.ScheduleTimeUtc)</td>
+                        <td>@Html.DisplayFor(x =>  billpay.Period)</td>
+                        @if (billpay.Status == "Pending")
+                        {
+                            <td><div class="badge badge-info">@Html.DisplayFor(x =>  billpay.Status)</div></td>
+                            <td>
+                                <form asp-action="ModifyDetailPage">
+                                    <input type="hidden" name="AccountNumber" value="@ViewBag.AccountNumber" />
+                                    <input type="hidden" name="payeeID" value="@billpay.PayeeId" />
+                                    <input type="hidden" name="BillPayId" value="@billpay.BillPayId" />
+                                    <input type="submit" class="btn btn-outline-primary" value="Modify Detail" />
+                                </form>
+                            </td>
+                            <td>
+                                <form asp-action="Cancel">
+                                    <input type="hidden" name="AccountNumber" value="@ViewBag.AccountNumber" />
+                                    <input type="hidden" name="BillPayId" value="@billpay.BillPayId" />
+                                    <input type="submit" class="btn btn-outline-primary" value="Cancel" />
+                                </form>
+                            </td>
+                        }
+                        else if (billpay.Status == "Transcation Failed")
+                        {
+                            <td><div class="badge badge-danger">@Html.DisplayFor(x =>  billpay.Status)</div></td>
+                            <td>
+                                <form asp-action="Cancel">
+                                    <input type="hidden" name="AccountNumber" value="@ViewBag.AccountNumber" />
+                                    <input type="hidden" name="BillPayId" value="@billpay.BillPayId" />
+                                    <input type="submit" class="btn btn-outline-primary" value="Cancel" />
+                                </form>
+                            </td>
+                            <td>
+
+                            </td>
+                        }
+                        else if (billpay.Status == "Completed")
+                        {
+                            <td><div class="badge badge-success">@Html.DisplayFor(x =>  billpay.Status)</div></td>
+                            <td>
+
+                            </td>
+                            <td></td>
+                        }
+
+                    </tr>
+                }
+            }
+        </table>
+        <div>
+            <a asp-action="Index">Back to Accounts</a>
+        </div>
+    </div>
+
+}
+else
+{
+    <div class="jumbotron">
+        <h1 class="display-4">You do not have any BillPay !!!!!</h1>
+        <p class="lead">plesase Create a BillPay by click Button below</p>
+        <hr class="my-4">
+
+        <form asp-Controller="BillPay" asp-action="Create">
+            <input type="hidden" name="AccountNumber" value="@ViewBag.AccountNumber" />
+            <input type="submit" class="btn btn-primary" value="Create a BillPay" />
+        </form>
+        <div>
+            <a asp-action="Index">Back to Accounts</a>
+        </div>
+    </div>
+}

@@ -1,0 +1,33 @@
+﻿@using BankApplicationForWeb.Models.ViewModel
+@using Microsoft.AspNetCore.Http
+@model List<AccountViewModel>
+@{
+    ViewData["Title"] = "DispalyAccounts for BillPay";
+}
+
+<div>
+    <h1 class="display-4">Welcome, @Model[0].CustomerName</h1>
+    <h3>Your Accounts</h3>
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(x => Model[0].AccountNumber)</th>
+            <th>@Html.DisplayNameFor(x =>Model[0].AccountType)</th>
+            <th>@Html.DisplayNameFor(x => Model[0].Balance)</th>
+            <th></th>
+        </tr>
+        @foreach (var account in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => account.AccountNumber)</td>             
+                 <td>@Html.DisplayFor(x => account.AccountType) </td>
+                <td>$@Html.DisplayFor(x => account.Balance)</td>
+                <td>
+                    <form asp-action="ViewBillPay">
+                        <input type="hidden" name="AccountNumber" value="@account.AccountNumber" />
+                        <input type="submit" class="btn btn-primary" value="View BillPay Detail" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

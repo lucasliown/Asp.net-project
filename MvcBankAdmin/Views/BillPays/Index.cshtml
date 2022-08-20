@@ -1,0 +1,52 @@
+﻿@using MvcBankAdmin.Models
+@using Microsoft.AspNetCore.Http
+@model List<BillPayViewModel>
+@{
+    ViewData["Title"] = "BillPays";
+}
+
+<div>
+    <h3>Your BillPays</h3>
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(x => Model[0].BillPayId)</th>
+            <th>@Html.DisplayNameFor(x =>Model[0].AccountNumber)</th>
+            <th>@Html.DisplayNameFor(x => Model[0].PayeeId)</th>
+             <th>@Html.DisplayNameFor(x => Model[0].Amount)</th>
+             <th>@Html.DisplayNameFor(x => Model[0].ScheduleTimeUtc)</th>
+             <th>@Html.DisplayNameFor(x => Model[0].Period)</th>
+             <th>@Html.DisplayNameFor(x => Model[0].transactionStatus)</th>
+             <th>@Html.DisplayNameFor(x => Model[0].LockState)</th>
+            <th></th>
+        </tr>
+        @foreach (var billpay in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => billpay.BillPayId)</td>             
+                 <td>@Html.DisplayFor(x => billpay.AccountNumber)</td>
+                 <td>@Html.DisplayFor(x => billpay.PayeeId)</td>
+                 <td>$@Html.DisplayFor(x => billpay.Amount)</td>
+                 <td>@Html.DisplayFor(x => billpay.ScheduleTimeUtc)</td>
+                 <td>@Html.DisplayFor(x => billpay.Period)</td>
+                 <td>@Html.DisplayFor(x => billpay.transactionStatus)</td>
+                 <td>
+                    @if (billpay.LockState=="L")
+                    { 
+                        <form asp-controller="BillPays" asp-action="UnLockBillPay">
+                        <input type="hidden" name="BillPayId" value="@billpay.BillPayId" />
+                        <input type="submit" class="btn btn-primary" value="UnLock" />
+                        </form>  
+                    }else{
+                        <form asp-controller="BillPays" asp-action="LockBillPay">
+                        <input type="hidden" name="BillPayId" value="@billpay.BillPayId" />
+                        <input type="submit" class="btn btn-primary" value="Lock" />
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<div>
+    <a asp-controller = "Customers" asp-action="Index">Go Back</a>
+</div>

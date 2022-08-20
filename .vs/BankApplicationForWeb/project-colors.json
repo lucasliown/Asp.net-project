@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5df8486d-62a5-459a-9396-c69d842e3c3c": {
+      "ProjectGuid": "5df8486d-62a5-459a-9396-c69d842e3c3c",
+      "DisplayName": "MvcBankAdmin",
+      "ColorIndex": 0
+    },
+    "3b1aaeeb-1cdb-457e-9cc4-6418ac2d5b3d": {
+      "ProjectGuid": "3b1aaeeb-1cdb-457e-9cc4-6418ac2d5b3d",
+      "DisplayName": "WebApi",
+      "ColorIndex": 1
+    },
+    "66caeb6d-0b99-4368-a55b-ff98836ab5f7": {
+      "ProjectGuid": "66caeb6d-0b99-4368-a55b-ff98836ab5f7",
+      "DisplayName": "BankApplicationForWeb.Tests",
+      "ColorIndex": 2
+    },
+    "3dcb9f40-a01c-43f9-81b6-e08a8e930a8e": {
+      "ProjectGuid": "3dcb9f40-a01c-43f9-81b6-e08a8e930a8e",
+      "DisplayName": "BankApplicationForWeb",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
