@@ -27,3 +27,25 @@ This porject have 2 part, the first one is Asp.net Core MVC project, which is fo
     <br>Once locked the customer should not be able to login to the Customer Website until unlocked by an admin.
    * Block and unblock scheduled payments
      <br>Blocked bills can displayed as “Blocked” within the BillPay list on the Customer Website. The customer cannot unblock the payment, although the customer can delete the bill if desired. When a scheduled payment is blocked it should not run until unblocked by an admin.
+### what to install
+Install vistual studio 2022 , .Net Core 6 and Asp .net Core.
+### NuGet package
+    Bootstrap.Datepicker
+    coverlet.collector
+    jQuery.UI.Combined
+    Microsoft.AspNetCore.Session
+    Microsoft.EntityFrameworkCore.InMemory 
+    Microsoft.EntityFrameworkCore.Proxies
+    Microsoft.EntityFrameworkCore.SqlServer
+    Microsoft.NET.Test.Sdk
+    Microsoft.VisualStudio.Web.CodeGeneration.Design
+    Newtonsoft.Json
+    SimpleHashing
+    Swashbuckle.AspNetCore
+    X.PagedList.Mvc.Core
+    
+    
+
+
+
+
